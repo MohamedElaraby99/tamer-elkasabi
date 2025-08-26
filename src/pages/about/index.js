@@ -13,7 +13,7 @@ import {
 export const About = () => {
   return (
     <HelmetProvider>
-      <Container className="About-header">
+      <Container className="About-header" dir="rtl">
         <Helmet>
           <meta charSet="utf-8" />
           <title> About | {meta.title}</title>
@@ -21,7 +21,7 @@ export const About = () => {
         </Helmet>
         <Row className="mb-5 mt-3 pt-md-3">
           <Col lg="8">
-            <h1 className="display-4 mb-4">About me</h1>
+            <h1 className="display-4 mb-4">نبذة عني</h1>
             <hr className="t_border my-4 ml-0 text-left" />
           </Col>
         </Row>
@@ -37,7 +37,7 @@ export const About = () => {
         </Row>
         <Row className=" sec_sp">
           <Col lg="5">
-            <h3 className="color_sec py-4">Work Timline</h3>
+            <h3 className="color_sec py-4">الخبرات العملية</h3>
           </Col>
           <Col lg="7">
             <table className="table caption-top">
@@ -57,38 +57,40 @@ export const About = () => {
         </Row>
         <Row className="sec_sp">
           <Col lg="5">
-            <h3 className="color_sec py-4">Skills</h3>
+            <h3 className="color_sec py-4">المهارات</h3>
           </Col>
           <Col lg="7">
-            {skills.map((data, i) => {
-              return (
-                <div key={i}>
-                  <h3 className="progress-title">{data.name}</h3>
-                  <div className="progress">
-                    <div
-                      className="progress-bar"
-                      style={{
-                        width: `${data.value}%`,
-                      }}
-                    >
-                      <div className="progress-value">{data.value}%</div>
+            <div>
+              {skills.map((data, i) => {
+                return (
+                  <div key={i}>
+                    <div className="skill-name">{data.name}</div>
+                    <div className="progress">
+                      <div
+                        className="progress-bar"
+                        role="progressbar"
+                        style={{ width: `${data.value}%` }}
+                        aria-valuenow={data.value}
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                      ></div>
                     </div>
                   </div>
-                </div>
-              );
-            })}
+                );
+              })}
+            </div>
           </Col>
         </Row>
         <Row className="sec_sp">
-          <Col lang="5">
-            <h3 className="color_sec py-4">services</h3>
+          <Col lg="5">
+            <h3 className="color_sec py-4">الخدمات</h3>
           </Col>
           <Col lg="7">
             {services.map((data, i) => {
               return (
-                <div className="service_ py-4" key={i}>
-                  <h5 className="service__title">{data.title}</h5>
-                  <p className="service_desc">{data.description}</p>
+                <div key={i}>
+                  <h4>{data.title}</h4>
+                  <p>{data.description}</p>
                 </div>
               );
             })}

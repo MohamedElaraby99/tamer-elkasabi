@@ -1,10 +1,12 @@
 .sec_sp {
-    margin-bottom: calc(3rem + 5.128vw)
+    margin-bottom: calc(3rem + 5.128vw);
+    direction: rtl;
 }
 
 .table td,
 .table th {
     color: var(--text-color);
+    text-align: right;
 }
 
 .t_border {
@@ -15,7 +17,8 @@
     font-size: 16px;
     font-weight: 700;
     margin: 15px 0 20px;
-    font-family: 'Raleway';
+    font-family: 'Cairo', sans-serif;
+    text-align: right;
 }
 
 .progress {
@@ -59,15 +62,18 @@
 
 .section-title {
     font-size: 45px;
+    text-align: right;
 }
 
 .service__title {
     padding: 8px 0;
     border-bottom: solid 2px var(--secondary-color);
+    text-align: right;
 }
 
 .service-section .service-category-title {
     padding-bottom: 4px;
+    text-align: right;
 }
 
 
@@ -97,4 +103,32 @@
         -webkit-transform: translateZ(0);
         transform: translateZ(0);
     }
+}
+
+/* Additional RTL styling for skills and services */
+.skill-name {
+    text-align: right;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.service_ {
+    text-align: right;
+}
+
+.service_desc {
+    text-align: right;
+}
+
+/* Table RTL styling */
+.table {
+    direction: rtl;
+}
+
+.table th {
+    text-align: right;
+}
+
+.table td {
+    text-align: right;
 }

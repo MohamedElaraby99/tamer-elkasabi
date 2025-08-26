@@ -5,6 +5,7 @@
     column-gap: 4rem;
     -moz-column-gap: 4rem;
     -webkit-column-gap: 4rem;
+    direction: rtl;
 }
 
 .po_item {
@@ -43,6 +44,7 @@
     transition: 0.3s ease-in-out;
     opacity: 0;
     border: 1px solid black;
+    text-align: right;
 }
 
 .po_item .content {

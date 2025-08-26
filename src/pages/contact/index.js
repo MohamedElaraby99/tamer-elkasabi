@@ -40,7 +40,7 @@ export const ContactUs = () => {
           console.log(result.text);
           setFormdata({
             loading: false,
-            alertmessage: "SUCCESS! ,Thankyou for your messege",
+            alertmessage: "تم الإرسال بنجاح! شكراً لك على رسالتك",
             variant: "success",
             show: true,
           });
@@ -48,7 +48,7 @@ export const ContactUs = () => {
         (error) => {
           console.log(error.text);
           setFormdata({
-            alertmessage: `Faild to send!,${error.text}`,
+            alertmessage: `فشل في الإرسال! ${error.text}`,
             variant: "danger",
             show: true,
           });
@@ -66,15 +66,15 @@ export const ContactUs = () => {
 
   return (
     <HelmetProvider>
-      <Container>
+      <Container dir="rtl">
         <Helmet>
           <meta charSet="utf-8" />
-          <title>{meta.title} | Contact</title>
+          <title>{meta.title} | تواصل معي</title>
           <meta name="description" content={meta.description} />
         </Helmet>
         <Row className="mb-5 mt-3 pt-md-3">
           <Col lg="8">
-            <h1 className="display-4 mb-4">Contact Me</h1>
+            <h1 className="display-4 mb-4">تواصل معي</h1>
             <hr className="t_border my-4 ml-0 text-left" />
           </Col>
         </Row>
@@ -93,9 +93,9 @@ export const ContactUs = () => {
             </Alert>
           </Col>
           <Col lg="5" className="mb-5">
-            <h3 className="color_sec py-4">Get in touch</h3>
+            <h3 className="color_sec py-4">تواصل معي</h3>
             <address>
-              <strong>Email:</strong>{" "}
+              <strong>البريد الإلكتروني:</strong>{" "}
               <a href={`mailto:${contactConfig.YOUR_EMAIL}`}>
                 {contactConfig.YOUR_EMAIL}
               </a>
@@ -103,7 +103,7 @@ export const ContactUs = () => {
               <br />
               {contactConfig.hasOwnProperty("YOUR_FONE") ? (
                 <p>
-                  <strong>Phone:</strong> {contactConfig.YOUR_FONE}
+                  <strong>الهاتف:</strong> {contactConfig.YOUR_FONE}
                 </p>
               ) : (
                 ""
@@ -119,7 +119,7 @@ export const ContactUs = () => {
                     className="form-control"
                     id="name"
                     name="name"
-                    placeholder="Name"
+                    placeholder="الاسم"
                     value={formData.name || ""}
                     type="text"
                     required
@@ -131,7 +131,7 @@ export const ContactUs = () => {
                     className="form-control rounded-0"
                     id="email"
                     name="email"
-                    placeholder="Email"
+                    placeholder="البريد الإلكتروني"
                     type="email"
                     value={formData.email || ""}
                     required
@@ -143,7 +143,7 @@ export const ContactUs = () => {
                 className="form-control rounded-0"
                 id="message"
                 name="message"
-                placeholder="Message"
+                placeholder="الرسالة"
                 rows="5"
                 value={formData.message}
                 onChange={handleChange}
@@ -153,7 +153,7 @@ export const ContactUs = () => {
               <Row>
                 <Col lg="12" className="form-group">
                   <button className="btn ac_btn" type="submit">
-                    {formData.loading ? "Sending..." : "Send"}
+                    {formData.loading ? "جاري الإرسال..." : "إرسال"}
                   </button>
                 </Col>
               </Row>

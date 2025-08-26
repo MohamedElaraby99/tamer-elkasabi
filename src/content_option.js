@@ -5,140 +5,140 @@ const meta = {
 };
 
 const introdata = {
-    title: "تامر القصبي",
+    title: " المهندس تامر أحمد القصبي",
     animated: {
-        first: "",
-        second: "مطور اندرويد",
-        third: "مطور ايفون",
+        first: "أمين مساعد أمانة الصناعة المركزية حزب مستقبل وطن",
+        second: " رئيس مجلس إدارة مجموعة رونت فيتا",
+        third: " رئيس مجلس إدارة  شركة برج العرب لإستخلاص الزيت النباتية (رويال فود)",
     },
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nisl euismod urna bibendum",
+    description: "مهندس متخصص في مجال الصناعة والإدارة، مع خبرة واسعة في إدارة المشاريع الصناعية والشركات",
     your_img_url: "https://images.unsplash.com/photo-1514790193030-c89d266d5a9d",
 };
 
 const dataabout = {
-    title: "abit about my self",
-    aboutme: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent quis dolor id ligula semper elementum feugiat pretium nulla. Nunc non commodo dolor. Nunc mollis dignissim facilisis. Morbi ut magna ultricies.",
+    title: "نبذة عني",
+    aboutme: "أنا مهندس متخصص في مجال الصناعة مع خبرة تزيد عن 15 عاماً في إدارة المشاريع الصناعية والشركات. أعمل حالياً كأمين مساعد لأمانة الصناعة المركزية في حزب مستقبل وطن، وأترأس مجلس إدارة مجموعة رونت فيتا وشركة برج العرب لاستخلاص الزيوت النباتية.",
 };
 const worktimeline = [{
-        jobtitle: "Designer of week",
-        where: "YAdfi",
-        date: "2020",
+        jobtitle: "أمين مساعد أمانة الصناعة المركزية",
+        where: "حزب مستقبل وطن",
+        date: "2023",
     },
     {
-        jobtitle: "Designer of week",
-        where: "Jamalya",
-        date: "2019",
+        jobtitle: "رئيس مجلس إدارة مجموعة رونت فيتا",
+        where: "مجموعة رونت فيتا",
+        date: "2022",
     },
     {
-        jobtitle: "Designer of week",
-        where: "ALquds",
-        date: "2019",
+        jobtitle: "رئيس مجلس إدارة شركة برج العرب",
+        where: "شركة برج العرب للزيوت النباتية",
+        date: "2021",
     },
 ];
 
 const skills = [{
-        name: "Python",
+        name: "إدارة المشاريع",
+        value: 95,
+    },
+    {
+        name: "القيادة الإدارية",
         value: 90,
     },
     {
-        name: "Djano",
+        name: "التخطيط الاستراتيجي",
         value: 85,
     },
     {
-        name: "Javascript",
+        name: "إدارة الموارد البشرية",
         value: 80,
     },
     {
-        name: "React",
-        value: 60,
-    },
-    {
-        name: "Jquery",
+        name: "التطوير الصناعي",
         value: 85,
     },
 ];
 
 const services = [{
-        title: "UI & UX Design",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nisl euismod urna bibendum sollicitudin.",
+        title: "الاستشارات الإدارية",
+        description: "نقدم خدمات استشارية متخصصة في مجال الإدارة الصناعية والتطوير المؤسسي للمشاريع والشركات.",
     },
     {
-        title: "Mobile Apps",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nisl euismod urna bibendum sollicitudin.",
+        title: "إدارة المشاريع",
+        description: "خدمات متكاملة في إدارة المشاريع الصناعية من التخطيط حتى التنفيذ والمتابعة.",
     },
     {
-        title: "Wordpress Design",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nisl euismod urna bibendum sollicitudin.",
+        title: "التطوير الاستراتيجي",
+        description: "مساعدتك في تطوير استراتيجيات العمل وتحسين الأداء المؤسسي لتحقيق النمو المستدام.",
     },
 ];
 
 const dataportfolio = [{
         img: "https://picsum.photos/400/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
+        description: "مشروع تطوير البنية التحتية الصناعية في المنطقة الاقتصادية",
         link: "#",
     },
     {
         img: "https://picsum.photos/400/800/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
+        description: "إعادة هيكلة شركة برج العرب للزيوت النباتية",
         link: "#",
     },
     {
         img: "https://picsum.photos/400/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
+        description: "تطوير استراتيجية النمو لمجموعة رونت فيتا",
         link: "#",
     },
     {
         img: "https://picsum.photos/400/600/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
+        description: "مشروع تحديث الأنظمة الإدارية في أمانة الصناعة",
         link: "#",
     },
     {
         img: "https://picsum.photos/400/300/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
+        description: "برنامج تدريب القيادات الإدارية في القطاع الصناعي",
         link: "#",
     },
     {
         img: "https://picsum.photos/400/700/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
+        description: "دراسة جدوى مشروع المدينة الصناعية الجديدة",
         link: "#",
     },
 
     {
         img: "https://picsum.photos/400/600/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
+        description: "تطوير سياسات الجودة والسلامة في المصانع",
         link: "#",
     },
     {
         img: "https://picsum.photos/400/300/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
+        description: "مشروع رقمنة العمليات الإدارية",
         link: "#",
     },
     {
         img: "https://picsum.photos/400/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
+        description: "إعداد الخطط الاستراتيجية للشركات الصناعية",
         link: "#",
     },
     {
         img: "https://picsum.photos/400/550/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
+        description: "تطوير برامج المسؤولية الاجتماعية للشركات",
         link: "#",
     },
     {
         img: "https://picsum.photos/400/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
+        description: "مشروع تحسين كفاءة الطاقة في المصانع",
         link: "#",
     },
     {
         img: "https://picsum.photos/400/700/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
+        description: "إعداد دراسات الجدوى الاقتصادية للمشاريع",
         link: "#",
     },
 ];
 
 const contactConfig = {
-    YOUR_EMAIL: "name@domain.com",
-    YOUR_FONE: "(555)123-4567",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vehicula eu nunc et sollicitudin. Cras pulvinar, nisi at imperdiet pharetra. ",
+    YOUR_EMAIL: "tamer@example.com",
+    YOUR_FONE: "+20 123 456 789",
+    description: "أنا متاح للتواصل والاستشارات في مجال الإدارة الصناعية والتطوير المؤسسي. لا تتردد في التواصل معي لأي استفسارات أو مشاريع.",
     // creat an emailjs.com account 
     // check out this tutorial https://www.emailjs.com/docs/examples/reactjs/
     YOUR_SERVICE_ID: "service_id",

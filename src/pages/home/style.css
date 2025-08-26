@@ -8,7 +8,7 @@ section {
 }
 
 .who_am_I {
-    font-family: Cinzel;
+    font-family: 'Cairo', sans-serif;
 }
 
 .has-first-color {
@@ -233,4 +233,57 @@ section {
 
 .intro_sec .h_bg-image {
     filter: saturate(0.5);
+}
+
+/* تنسيق الإهداء من شركة فكرة للبرمجيات */
+.dedication-section {
+    margin-top: 3rem;
+    padding: 2rem 0;
+    border-top: 2px solid var(--primary-color);
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+}
+
+.dedication-text {
+    color: var(--text-color);
+    font-size: 1.1rem;
+    line-height: 2;
+    margin: 0;
+}
+
+.dedication-label {
+    color: var(--text-color-2);
+    font-size: 1rem;
+    font-weight: 400;
+    opacity: 0.8;
+}
+
+.company-name {
+    color: var(--text-color-3);
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin: 0.5rem 0;
+    display: block;
+}
+
+.company-slogan {
+    color: var(--text-color-2);
+    font-size: 0.9rem;
+    font-style: italic;
+    opacity: 0.9;
+    margin-top: 0.5rem;
+    display: block;
+}
+
+/* تأثيرات إضافية للإهداء */
+.dedication-section:hover {
+    background: rgba(255, 255, 255, 0.08);
+    transform: translateY(-2px);
+    transition: all 0.3s ease;
+}
+
+.company-name:hover {
+    color: var(--text-color-3);
+    text-shadow: 0 0 10px rgba(204, 0, 0, 0.5);
+    transition: all 0.3s ease;
 }

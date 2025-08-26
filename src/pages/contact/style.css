@@ -5,6 +5,8 @@
     background-color: var(--bg-color);
     border-radius: 0 !important;
     border: 1px solid var(--secondary-color);
+    text-align: right;
+    direction: rtl;
 }
 
 .contact__form input.form-control {
@@ -14,6 +16,33 @@
 
 button.btn.ac_btn:hover {
     color: var(--secondary-color);
+}
+
+/* RTL styling for contact form */
+.contact__form {
+    direction: rtl;
+}
+
+.contact__form label {
+    text-align: right;
+}
+
+.contact__form .form-group {
+    text-align: right;
+}
+
+/* RTL styling for contact info */
+address {
+    direction: rtl;
+    text-align: right;
+}
+
+address strong {
+    text-align: right;
+}
+
+address a {
+    text-align: right;
 }
 
 .loading-bar {

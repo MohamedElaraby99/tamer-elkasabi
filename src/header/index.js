@@ -35,16 +35,16 @@ const Headermain = () => {
               <div className="menu__container p-3">
                 <ul className="the_menu">
                   <li className="menu_item ">
-                  <Link  onClick={handleToggle} to="/" className="my-3">Home</Link>
+                  <Link  onClick={handleToggle} to="/" className="my-3">الرئيسية</Link>
                   </li>
                   <li className="menu_item">
-                    <Link  onClick={handleToggle} to="/portfolio" className="my-3"> Portfolio</Link>
+                    <Link  onClick={handleToggle} to="/portfolio" className="my-3">أعمالي </Link>
                   </li>
                   <li className="menu_item">
-                  <Link onClick={handleToggle} to="/about" className="my-3">About</Link>
+                    <Link onClick={handleToggle} to="/about" className="my-3">من نحن</Link>
                   </li>
                   <li className="menu_item">
-                  <Link onClick={handleToggle} to="/contact" className="my-3"> Contact</Link>
+                  <Link onClick={handleToggle} to="/contact" className="my-3">تواصل معي</Link>
                   </li>
                 </ul>
               </div>
@@ -52,11 +52,11 @@ const Headermain = () => {
           </div>
           <div className="menu_footer d-flex flex-column flex-md-row justify-content-between align-items-md-center position-absolute w-100 p-3">
             <div className="d-flex">
-            <a href={socialprofils.facebook}>Facebook</a>
-            <a href={socialprofils.github}>Github</a>
-            <a href={socialprofils.twitter}>Twitter</a>
+            <a href={socialprofils.facebook}>فيسبوك</a>
+            <a href={socialprofils.github}>جيت هب</a>
+            <a href={socialprofils.twitter}>تويتر</a>
             </div>
-            <p className="copyright m-0">copyright __ {logotext}</p>
+            <p className="copyright m-0">حقوق النشر © {logotext}</p>
           </div>
         </div>
       </header>

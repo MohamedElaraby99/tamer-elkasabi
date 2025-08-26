@@ -21,6 +21,7 @@
 html,
 body {
     height: 100%;
+    direction: rtl;
 }
 
 body {
@@ -30,16 +31,35 @@ body {
     overflow-y: visible;
     background-color: var(--bg-color);
     color: var(--text-color);
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Cairo', sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     padding-top: 60px;
     border-left: 10px solid var(--primary-color);
     border-right: 10px solid var(--primary-color);
+    text-align: right;
+}
+
+/* Ensure Cairo font is used for all text elements */
+* {
+    font-family: 'Cairo', sans-serif;
 }
 
 ul {
     list-style: none;
+}
+
+h2 {
+    font-size: 3rem;
+    font-weight: 600;
+    color: var(--text-color);
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    
 }
 
 h1,
@@ -48,7 +68,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: Marcellus;
+    font-family: 'Cairo', sans-serif;
 }
 
 a,
