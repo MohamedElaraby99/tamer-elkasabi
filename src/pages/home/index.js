@@ -41,7 +41,7 @@ export const Home = () => {
                 <div className="intro_btn-action pb-5">
                   <Link to="/portfolio" className="text_2">
                     <div id="button_p" className="ac_btn btn ">
-                      أعمالي
+                      السيرة الذاتية
                       <div className="ring one"></div>
                       <div className="ring two"></div>
                       <div className="ring three"></div>
@@ -49,7 +49,7 @@ export const Home = () => {
                   </Link>
                   <Link to="/contact">
                     <div id="button_h" className="ac_btn btn">
-                      تواصل معي
+                      تواصلو معنا
                       <div className="ring one"></div>
                       <div className="ring two"></div>
                       <div className="ring three"></div>
@@ -58,13 +58,13 @@ export const Home = () => {
                 </div>
                 
                 {/* إهداء من شركة فكرة للبرمجيات */}
-                <div className="dedication-section text-center mt-5">
+                <div className="dedication-section text-center mt-4">
                   <p className="dedication-text">
                     <span className="dedication-label">إهداء من:</span>
                     <br />
-                    <span className="company-name">شركة فكرة للبرمجيات</span>
-                    <br />
-                    <span className="company-slogan">نحول أفكارك إلى واقع رقمي</span>
+                    <a href="https://fikra.solutions/" target="_blank" rel="noopener noreferrer" className="company-link">
+                      شركة فكرة للبرمجيات
+                    </a>
                   </p>
                 </div>
               </div>

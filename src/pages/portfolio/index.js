@@ -14,23 +14,19 @@ export const Portfolio = () => {
           <meta name="description" content={meta.description} />
         </Helmet>
         <Row className="mb-5 mt-3 pt-md-3">
-          <Col lg="8">
-            <h1 className="display-4 mb-4"> أعمالي </h1>
+          <Col lg="12">
+            <h1 className="display-4 mb-4"> السيرة الذاتية </h1>
             <hr className="t_border my-4 ml-0 text-left" />
           </Col>
         </Row>
-        <div className="mb-5 po_items_ho">
-          {dataportfolio.map((data, i) => {
-            return (
-              <div key={i} className="po_item">
-                <img src={data.img} alt="" />
-                <div className="content">
-                  <p>{data.description}</p>
-                  <a href={data.link}>عرض المشروع</a>
-                </div>
-              </div>
-            );
-          })}
+        <div className="coming-soon-container">
+          <div className="coming-soon-content">
+            <h2 className="coming-soon-title">قريباً</h2>
+            <p className="coming-soon-text">جارى العمل والإعداد فى أقرب وقت ممكن</p>
+            <div className="coming-soon-icon">
+              <i className="fas fa-cogs"></i>
+            </div>
+          </div>
         </div>
       </Container>
     </HelmetProvider>

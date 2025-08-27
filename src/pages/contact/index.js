@@ -10,6 +10,7 @@ export const ContactUs = () => {
   const [formData, setFormdata] = useState({
     email: "",
     name: "",
+    phone: "",
     message: "",
     loading: false,
     show: false,
@@ -22,8 +23,10 @@ export const ContactUs = () => {
     setFormdata({ loading: true });
 
     const templateParams = {
-      from_name: formData.email,
+      from_name: formData.name,
       user_name: formData.name,
+      user_email: formData.email,
+      user_phone: formData.phone,
       to_name: contactConfig.YOUR_EMAIL,
       message: formData.message,
     };
@@ -69,12 +72,12 @@ export const ContactUs = () => {
       <Container dir="rtl">
         <Helmet>
           <meta charSet="utf-8" />
-          <title>{meta.title} | تواصل معي</title>
+          <title>{meta.title} | تواصلو معنا</title>
           <meta name="description" content={meta.description} />
         </Helmet>
         <Row className="mb-5 mt-3 pt-md-3">
           <Col lg="8">
-            <h1 className="display-4 mb-4">تواصل معي</h1>
+            <h1 className="display-4 mb-4">تواصلو معنا</h1>
             <hr className="t_border my-4 ml-0 text-left" />
           </Col>
         </Row>
@@ -93,23 +96,11 @@ export const ContactUs = () => {
             </Alert>
           </Col>
           <Col lg="5" className="mb-5">
-            <h3 className="color_sec py-4">تواصل معي</h3>
-            <address>
-              <strong>البريد الإلكتروني:</strong>{" "}
-              <a href={`mailto:${contactConfig.YOUR_EMAIL}`}>
-                {contactConfig.YOUR_EMAIL}
-              </a>
-              <br />
-              <br />
-              {contactConfig.hasOwnProperty("YOUR_FONE") ? (
-                <p>
-                  <strong>الهاتف:</strong> {contactConfig.YOUR_FONE}
-                </p>
-              ) : (
-                ""
-              )}
-            </address>
+            <h3 className="color_sec py-4">تواصلو معنا</h3>
             <p>{contactConfig.description}</p>
+            <div className="contact-info">
+              <p className="contact-note">املأ النموذج وسنتواصل معكم في أقرب وقت ممكن</p>
+            </div>
           </Col>
           <Col lg="7" className="d-flex align-items-center">
             <form onSubmit={handleSubmit} className="contact__form w-100">
@@ -119,7 +110,7 @@ export const ContactUs = () => {
                     className="form-control"
                     id="name"
                     name="name"
-                    placeholder="الاسم"
+                    placeholder="الاسم الكامل"
                     value={formData.name || ""}
                     type="text"
                     required
@@ -134,6 +125,20 @@ export const ContactUs = () => {
                     placeholder="البريد الإلكتروني"
                     type="email"
                     value={formData.email || ""}
+                    required
+                    onChange={handleChange}
+                  />
+                </Col>
+              </Row>
+              <Row>
+                <Col lg="12" className="form-group">
+                  <input
+                    className="form-control"
+                    id="phone"
+                    name="phone"
+                    placeholder="رقم الهاتف"
+                    value={formData.phone || ""}
+                    type="tel"
                     required
                     onChange={handleChange}
                   />

@@ -38,24 +38,19 @@ const Headermain = () => {
                   <Link  onClick={handleToggle} to="/" className="my-3">الرئيسية</Link>
                   </li>
                   <li className="menu_item">
-                    <Link  onClick={handleToggle} to="/portfolio" className="my-3">أعمالي </Link>
+                    <Link  onClick={handleToggle} to="/portfolio" className="my-3">السيرة الذاتية </Link>
                   </li>
                   <li className="menu_item">
                     <Link onClick={handleToggle} to="/about" className="my-3">من نحن</Link>
                   </li>
                   <li className="menu_item">
-                  <Link onClick={handleToggle} to="/contact" className="my-3">تواصل معي</Link>
+                  <Link onClick={handleToggle} to="/contact" className="my-3">تواصلو معنا</Link>
                   </li>
                 </ul>
               </div>
             </div>
           </div>
           <div className="menu_footer d-flex flex-column flex-md-row justify-content-between align-items-md-center position-absolute w-100 p-3">
-            <div className="d-flex">
-            <a href={socialprofils.facebook}>فيسبوك</a>
-            <a href={socialprofils.github}>جيت هب</a>
-            <a href={socialprofils.twitter}>تويتر</a>
-            </div>
             <p className="copyright m-0">حقوق النشر © {logotext}</p>
           </div>
         </div>

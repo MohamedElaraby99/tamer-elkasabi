@@ -31,7 +31,7 @@ body {
     overflow-y: visible;
     background-color: var(--bg-color);
     color: var(--text-color);
-    font-family: 'Cairo', sans-serif;
+    font-family: 'Noto Kufi Arabic', 'Cairo', sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     padding-top: 60px;
@@ -40,9 +40,9 @@ body {
     text-align: right;
 }
 
-/* Ensure Cairo font is used for all text elements */
+/* Ensure Noto Kufi Arabic font is used for all text elements */
 * {
-    font-family: 'Cairo', sans-serif;
+    font-family: 'Noto Kufi Arabic', 'Cairo', sans-serif;
 }
 
 ul {
@@ -68,7 +68,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: 'Cairo', sans-serif;
+    font-family: 'Noto Kufi Arabic', 'Cairo', sans-serif;
 }
 
 a,

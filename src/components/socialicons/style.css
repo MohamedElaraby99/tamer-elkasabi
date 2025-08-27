@@ -1,86 +1,102 @@
-.stick_follow_icon {
+.soc-box {
+    position: fixed;
     top: 50%;
     left: 30px;
-    width: 20px;
-    height: 200px;
-    position: fixed;
-    margin-top: -100px;
+    transform: translateY(-50%);
+    z-index: 1000;
 }
 
-.stick_follow_icon ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.stick_follow_icon svg {
-    width: 1.3em;
-    height: 1.3em;
-    fill: var(--text-color)
-}
-
-.stick_follow_icon p {
-    top: 70px;
-    left: -24px;
-    width: 68px;
-    height: 20px;
+.follow-label {
     color: var(--text-color);
     font-size: 12px;
     font-weight: 600;
-    line-height: 1.2;
+    margin-bottom: 15px;
+    transform: rotate(-90deg);
     white-space: nowrap;
     position: relative;
-    transform: rotate( -90deg);
-}
-
-.stick_follow_icon ul li {
-    display: block;
-    font-size: 12px;
-    text-align: center;
     margin-bottom: 10px;
-    transition: all .3s;
 }
 
-.stick_follow_icon p:after {
-    top: 9px;
-    right: -48px;
-    width: 40px;
-    height: 1px;
+.follow-label::after {
     content: "";
-    display: block;
     position: absolute;
+    top: 50%;
+    right: 40px;
+    width: 30px;
+    height: 2px;
     background-color: var(--text-color);
+    transform: translateY(-50%) rotate(0deg);
+    margin-right: 10px;
 }
 
+.soc {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 63px;
+}
+
+.soc a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    color: var(--text-color);
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.soc a:hover {
+    background: var(--text-color);
+    color: var(--bg-color);
+    transform: translateX(5px);
+}
+
+.soc a .ion {
+    width: 16px;
+    height: 16px;
+    fill: currentColor;
+}
+
+/* Mobile responsive */
 @media only screen and (max-width: 991px) {
-    .stick_follow_icon {
-        width: unset;
-        height: unset;
+    .soc-box {
         position: static;
-        margin-top: unset;
+        transform: none;
         display: flex;
-        flex-direction: row-reverse;
+        flex-direction: row;
+        align-items: center;
         justify-content: center;
         padding: 40px 0;
-        align-items: center;
+        gap: 20px;
     }
-    .stick_follow_icon p {
-        top: unset;
-        left: unset;
-        width: unset;
-        height: unset;
-        white-space: nowrap;
-        position: relative;
-        transform: unset;
+    
+    .follow-label {
+        transform: none;
+        position: static;
+        left: auto;
+        margin-bottom: 0;
         font-size: 17px;
-        margin-right: 65px;
     }
-    .stick_follow_icon ul {
-        margin-bottom: 20px;
+    
+    .follow-label::after {
+        display: none;
     }
-    .stick_follow_icon ul li {
-        display: inline;
-        margin-bottom: 29px;
-        margin-right: 10px;
+    
+    .soc {
+        flex-direction: row;
+        margin-top: 0;
+        gap: 15px;
+    }
+    
+    .soc a {
+        width: 45px;
+        height: 45px;
+    }
+    
+    .soc a:hover {
+        transform: translateY(-3px);
     }
 }

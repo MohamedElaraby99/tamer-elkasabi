@@ -1,4 +1,6 @@
-const logotext = "تامر القصبي";
+// import TamerImage from "./assets/images/tamer elkasabi.png";
+
+const logotext = "تامر القصبي - Tamer Elkasabi";
 const meta = {
     title: "تامر القصبي",
     description: "تامر القصبي",
@@ -12,7 +14,7 @@ const introdata = {
         third: " رئيس مجلس إدارة  شركة برج العرب لإستخلاص الزيت النباتية (رويال فود)",
     },
     description: "مهندس متخصص في مجال الصناعة والإدارة، مع خبرة واسعة في إدارة المشاريع الصناعية والشركات",
-    your_img_url: "https://images.unsplash.com/photo-1514790193030-c89d266d5a9d",
+    your_img_url: "/tamer-elkasabi.png",
 };
 
 const dataabout = {
@@ -138,7 +140,7 @@ const dataportfolio = [{
 const contactConfig = {
     YOUR_EMAIL: "tamer@example.com",
     YOUR_FONE: "+20 123 456 789",
-    description: "أنا متاح للتواصل والاستشارات في مجال الإدارة الصناعية والتطوير المؤسسي. لا تتردد في التواصل معي لأي استفسارات أو مشاريع.",
+    description: "أنا متاح للتواصل والاستشارات في مجال الإدارة الصناعية والتطوير المؤسسي. لا تتردد في التواصلو معنا لأي استفسارات أو مشاريع.",
     // creat an emailjs.com account 
     // check out this tutorial https://www.emailjs.com/docs/examples/reactjs/
     YOUR_SERVICE_ID: "service_id",
@@ -147,10 +149,7 @@ const contactConfig = {
 };
 
 const socialprofils = {
-    github: "https://github.com",
-    facebook: "https://facebook.com",
-    linkedin: "https://linkedin.com",
-    twitter: "https://twitter.com",
+    facebook: "https://www.facebook.com/share/16ttZaqTpq/",
 };
 export {
     meta,

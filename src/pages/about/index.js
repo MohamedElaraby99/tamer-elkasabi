@@ -20,82 +20,20 @@ export const About = () => {
           <meta name="description" content={meta.description} />
         </Helmet>
         <Row className="mb-5 mt-3 pt-md-3">
-          <Col lg="8">
+          <Col lg="12">
             <h1 className="display-4 mb-4">نبذة عني</h1>
             <hr className="t_border my-4 ml-0 text-left" />
           </Col>
         </Row>
-        <Row className="sec_sp">
-          <Col lg="5">
-            <h3 className="color_sec py-4">{dataabout.title}</h3>
-          </Col>
-          <Col lg="7" className="d-flex align-items-center">
-            <div>
-              <p>{dataabout.aboutme}</p>
+        <div className="coming-soon-container">
+          <div className="coming-soon-content">
+            <h2 className="coming-soon-title">قريباً</h2>
+            <p className="coming-soon-text">جارى العمل والإعداد فى أقرب وقت ممكن</p>
+            <div className="coming-soon-icon">
+              <i className="fas fa-cogs"></i>
             </div>
-          </Col>
-        </Row>
-        <Row className=" sec_sp">
-          <Col lg="5">
-            <h3 className="color_sec py-4">الخبرات العملية</h3>
-          </Col>
-          <Col lg="7">
-            <table className="table caption-top">
-              <tbody>
-                {worktimeline.map((data, i) => {
-                  return (
-                    <tr key={i}>
-                      <th scope="row">{data.jobtitle}</th>
-                      <td>{data.where}</td>
-                      <td>{data.date}</td>
-                    </tr>
-                  );
-                })}
-              </tbody>
-            </table>
-          </Col>
-        </Row>
-        <Row className="sec_sp">
-          <Col lg="5">
-            <h3 className="color_sec py-4">المهارات</h3>
-          </Col>
-          <Col lg="7">
-            <div>
-              {skills.map((data, i) => {
-                return (
-                  <div key={i}>
-                    <div className="skill-name">{data.name}</div>
-                    <div className="progress">
-                      <div
-                        className="progress-bar"
-                        role="progressbar"
-                        style={{ width: `${data.value}%` }}
-                        aria-valuenow={data.value}
-                        aria-valuemin="0"
-                        aria-valuemax="100"
-                      ></div>
-                    </div>
-                  </div>
-                );
-              })}
-            </div>
-          </Col>
-        </Row>
-        <Row className="sec_sp">
-          <Col lg="5">
-            <h3 className="color_sec py-4">الخدمات</h3>
-          </Col>
-          <Col lg="7">
-            {services.map((data, i) => {
-              return (
-                <div key={i}>
-                  <h4>{data.title}</h4>
-                  <p>{data.description}</p>
-                </div>
-              );
-            })}
-          </Col>
-        </Row>
+          </div>
+        </div>
       </Container>
     </HelmetProvider>
   );
