@@ -68,6 +68,8 @@ section {
         max-width: 700px;
         padding-left: 20px;
         padding-right: 20px;
+        padding-top: 10px;
+        padding-bottom: 10px;
     }
 }
 
@@ -198,11 +200,12 @@ section {
 
 @media (max-width:991.98px) {
     .intro_sec .h_bg-image {
-        height: 600px;
-        min-height: 75vh;
-        margin-bottom: 30px;
-        margin-top: 30px;
-        background-position: center top;
+        height: 350px;
+        min-height: 350px;
+        margin-bottom: 20px;
+        margin-top: 20px;
+        background-position: center center;
+        background-size: contain;
     }
     .intro_sec .h_bg-image .block {
         top: unset;
@@ -211,6 +214,16 @@ section {
         margin: 0;
         left: 50%;
         transform: translate(-50%, 50%);
+    }
+}
+
+/* Additional mobile optimization for smaller screens */
+@media (max-width:576px) {
+    .intro_sec .h_bg-image {
+        height: 280px;
+        min-height: 280px;
+        margin-bottom: 15px;
+        margin-top: 15px;
     }
 }
 
@@ -241,8 +254,8 @@ section {
 
 /* تنسيق الإهداء من شركة فكرة للبرمجيات */
 .dedication-section {
-    margin-top: 2rem;
-    padding: 1rem 0;
+    margin-top: 1.5rem;
+    padding: 0.7rem 0;
     border-top: 1px solid var(--text-color-2);
     background: rgba(255, 255, 255, 0.03);
     border-radius: 5px;
@@ -250,26 +263,26 @@ section {
 
 .dedication-text {
     color: var(--text-color);
-    font-size: 0.9rem;
-    line-height: 1.6;
+    font-size: 0.7rem;
+    line-height: 1.4;
     margin: 0;
 }
 
 .dedication-label {
     color: var(--text-color-2);
-    font-size: 0.8rem;
+    font-size: 0.6rem;
     font-weight: 400;
     opacity: 0.7;
 }
 
 .company-link {
     color: var(--text-color-3);
-    font-size: 1rem;
+    font-size: 0.75rem;
     font-weight: 600;
     text-decoration: none;
     transition: all 0.3s ease;
     display: inline-block;
-    margin-top: 0.3rem;
+    margin-top: 0.2rem;
 }
 
 .company-link:hover {

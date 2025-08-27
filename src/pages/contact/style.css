@@ -54,6 +54,18 @@ address a {
     margin-top: 1rem;
 }
 
+/* Add bottom spacing for contact form */
+.contact__form {
+    margin-bottom: 4rem;
+    padding-bottom: 2rem;
+}
+
+/* Add bottom spacing to contact page container */
+.sec_sp {
+    margin-bottom: 4rem;
+    padding-bottom: 3rem;
+}
+
 .contact-note {
     color: var(--text-color);
     font-size: 1.1rem;

@@ -23,6 +23,9 @@ export default function App() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
+    // Set dark theme permanently
+    document.documentElement.setAttribute('data-theme', 'dark');
+    
     // Simulate loading time and wait for fonts/assets to load
     const timer = setTimeout(() => {
       setLoading(false);
