@@ -138,14 +138,12 @@ const dataportfolio = [{
 ];
 
 const contactConfig = {
-    YOUR_EMAIL: "tamer@example.com",
+    YOUR_EMAIL: "mohamedalarbic6@gmail.com",
     YOUR_FONE: "+20 123 456 789",
-    description: "أنا متاح للتواصل والاستشارات في مجال الإدارة الصناعية والتطوير المؤسسي. لا تتردد في التواصلو معنا لأي استفسارات أو مشاريع.",
-    // creat an emailjs.com account 
-    // check out this tutorial https://www.emailjs.com/docs/examples/reactjs/
-    YOUR_SERVICE_ID: "service_id",
-    YOUR_TEMPLATE_ID: "template_id",
-    YOUR_USER_ID: "user_id",
+    description: "لا تتردد في ارسال رسالتك !",
+    YOUR_SERVICE_ID: "service_lspo7he",
+    YOUR_TEMPLATE_ID: "template_coqhzmn", // Contact Us template
+    YOUR_USER_ID: "81d8TyXC4XBXjjcIZ", // Your EmailJS public key
 };
 
 const socialprofils = {
